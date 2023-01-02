@@ -1,16 +1,14 @@
 NAME     = megaphone
 CXX      = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-
-INCLUDES_DIR = -L./includes
-
+ßßßß
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	$(CXX) $(CXXFLAGS) $(INCLUDES_DIR) -o $(NAME) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 %.o : %.cpp
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
