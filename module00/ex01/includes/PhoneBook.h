@@ -1,7 +1,7 @@
 #ifndef PHONEBOOK_H
-# define PHONEBOOK_H
+#define PHONEBOOK_H
 
-# include "Contact.h"
+#include "Contact.h"
 
 class PhoneBook {
 	public:
@@ -18,4 +18,5 @@ class PhoneBook {
 		int     size_;
 		Contact contacts_[kMaxSize];
 };
+
 #endif
