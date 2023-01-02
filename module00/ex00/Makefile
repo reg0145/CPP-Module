@@ -1,7 +1,7 @@
 NAME     = megaphone
 CXX      = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-ßßßß
+
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 
