@@ -1,16 +1,18 @@
-//
-// Created by KDH on 2022/12/21.
-//
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
-#ifndef INC_00_WEAPON_HPP
-#define INC_00_WEAPON_HPP
-
-
+#include <string>
 
 class Weapon {
+	private :
+		std::string type;
 
+	public :
+		Weapon();
+		Weapon(std::string type);
+
+		const std::string& getType();
+		void setType(std::string type);
 };
 
-
-
-#endif //INC_00_WEAPON_HPP
+#endif

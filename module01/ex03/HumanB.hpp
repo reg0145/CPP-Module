@@ -1,16 +1,20 @@
-//
-// Created by KDH on 2022/12/21.
-//
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
 
-#ifndef INC_00_HUMANB_HPP
-#define INC_00_HUMANB_HPP
-
-
+#include <iostream>
+#include "Weapon.hpp"
 
 class HumanB {
+	private :
+		Weapon *weapon;
+		std::string name;
 
+	public :
+		HumanB(std::string name);
+
+		void    attack();
+		void    setWeapon(Weapon& weapon);
 };
 
 
-
-#endif //INC_00_HUMANB_HPP
+#endif

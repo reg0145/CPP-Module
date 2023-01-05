@@ -1,16 +1,18 @@
-//
-// Created by KDH on 2022/12/21.
-//
+#ifndef HUMANA_HPP
+#define HUMANA_HPP
 
-#ifndef INC_00_HUMANA_HPP
-#define INC_00_HUMANA_HPP
-
-
+#include <iostream>
+#include "Weapon.hpp"
 
 class HumanA {
+	private :
+		Weapon *weapon;
+		std::string name;
 
+	public :
+		HumanA(std::string name, Weapon& weapon);
+1
+		void    attack();
 };
 
-
-
-#endif //INC_00_HUMANA_HPP
+#endif
