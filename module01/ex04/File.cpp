@@ -1,8 +1,6 @@
 #include "File.hpp"
 
-ft::File::File(char *name) {
-	this->name = std::string(name);
-}
+ft::File::File(char *name) : name(std::string(name)) {}
 
 void ft::File::SaveAs(std::string fileName) {
 	std::ofstream ofstream(fileName.c_str());
