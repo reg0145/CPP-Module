@@ -3,7 +3,7 @@
 
 Zombie* zombieHorde(int N, std::string name)
 {
-	if (N < 0) {
+	if (N < 1) {
 		std::cout << "one or more zombies can be created!" << std::endl;
 		return NULL;
 	}
