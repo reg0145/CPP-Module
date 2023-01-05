@@ -1,16 +1,23 @@
-//
-// Created by KDH on 2022/12/21.
-//
+#ifndef FILE_HPP
+#define FILE_HPP
 
-#ifndef INC_00_FILE_HPP
-#define INC_00_FILE_HPP
+#include <iostream>
+#include <fstream>
+#include <string>
 
+namespace ft{
+	class File {
+		private:
+			std::string name;
+			std::string content;
 
+		public:
+			File(char *name);
 
-class File {
+			void SaveAs(std::string fileName);
+			void Replace(std::string oldChar, std::string newChar);
+			std::string GetName();
+	};
+}
 
-};
-
-
-
-#endif //INC_00_FILE_HPP
+#endif
