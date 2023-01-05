@@ -1,11 +1,9 @@
-CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+NAME     = harlFilter
+CXX      = c++
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRCS = $(wildcard *.cpp)
-
 OBJS = $(SRCS:.cpp=.o)
-
-NAME = main
 
 all : $(NAME)
 

@@ -1,16 +1,11 @@
-//
-// Created by KDH on 2022/12/23.
-//
-
 #include "Harl.hpp"
 
-int main(void)
-{
-	Harl harl;
+int main(int ac, char *av[]) {
+	if (ac != 2) {
+		std::cout << "Please put only one parameter." << std::endl;
+		return 1;
+	}
 
-	harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
-	harl.complain("");
+	Harl harl;
+	harl.complain(std::string(av[1]));
 }
