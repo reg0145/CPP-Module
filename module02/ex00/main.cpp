@@ -1,9 +1,4 @@
-//
-// Created by KDH on 2022/12/23.
-//
-
-#include <iostream>
-#include "Fixed.hpp"
+#include "../includes/Fixed.hpp"
 
 int main(void)
 {

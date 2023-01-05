@@ -1,10 +1,6 @@
 #include "Zombie.hpp"
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
-
-int main(void)
-{
+int main(void) {
 	Zombie *normal_zombie = newZombie("Normal");
 	normal_zombie->announce();
 
