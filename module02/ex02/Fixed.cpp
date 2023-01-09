@@ -1,21 +1,5 @@
 #include "Fixed.hpp"
 
-Fixed& min(Fixed &A, Fixed &B) {
-	return A > B ? B : A;
-}
-
-Fixed& max(Fixed &A, Fixed &B) {
-	return A > B ? A : B;
-}
-
-const Fixed& min(const Fixed &A, const Fixed &B) {
-	return A > B ? B : A;
-}
-
-const Fixed& Fixed::max(const Fixed &A, const Fixed &B) {
-	return A > B ? A : B;
-}
-
 Fixed::Fixed() : mFixedPoint(0) {}
 
 Fixed::Fixed(const int integerPart) {
@@ -143,4 +127,20 @@ Fixed Fixed::operator--(int) {
 	Fixed old = *this;
 	operator--();
 	return old;
+}
+
+Fixed& min(Fixed &A, Fixed &B) {
+	return A > B ? B : A;
+}
+
+Fixed& max(Fixed &A, Fixed &B) {
+	return A > B ? A : B;
+}
+
+const Fixed& min(const Fixed &A, const Fixed &B) {
+	return A > B ? B : A;
+}
+
+const Fixed& Fixed::max(const Fixed &A, const Fixed &B) {
+	return A > B ? A : B;
 }
