@@ -24,7 +24,9 @@ int main (void) {
 
 	a.guardGate();
 	a.highFivesGuys();
-
+	b.guardGate();
+	b.highFivesGuys();
+	
 	a.whoAmI();
 	b.whoAmI();
 }

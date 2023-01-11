@@ -1,8 +1,8 @@
 #include "ScavTrap.hpp"
 
 int main (void) {
-	ScavTrap a("A");
-	ScavTrap b("B");
+	FragTrap a("A");
+	FragTrap b("B");
 
 	a.attack("B");
 	b.takeDamage(20);
