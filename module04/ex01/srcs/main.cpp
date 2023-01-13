@@ -12,8 +12,10 @@ int main(void) {
 			std::cout << "malloc error" << std::endl;
 			std::exit(EXIT_FAILURE);
 		}
+
 		dog->makeSound();
 		cat->makeSound();
+		
 		delete dog;
 		delete cat;
 	}
