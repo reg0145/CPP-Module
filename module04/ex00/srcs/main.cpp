@@ -18,10 +18,10 @@ int main(void)
 		std::cout << dog->getType() << " " << std::endl;
 		std::cout << cat->getType() << " " << std::endl;
 
+		animal->makeSound();
 		dog->makeSound();
 		cat->makeSound();
-		animal->makeSound();
-
+		
 		delete animal;
 		delete dog;
 		delete cat;
@@ -37,6 +37,7 @@ int main(void)
 		}
 
 		std::cout << wrongCat->getType() << " " << std::endl;
+		
 		wrongCat->makeSound();
 		wrongAnimal->makeSound();
 
