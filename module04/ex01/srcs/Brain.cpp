@@ -5,7 +5,7 @@ Brain::Brain() {
 }
 
 Brain::Brain(const Brain &ref) {
-	std::memcpy(this->ideas, ref.ideas, sizeof(std::string) * ref.ideas->size());
+	std::memcpy(this->ideas, ref.ideas, sizeof(std::string) * (sizeof(ideas)/sizeof(*ideas)));
 	std::cout << "Brain constructor!" << std::endl;
 }
 
@@ -14,7 +14,7 @@ Brain::~Brain() {
 }
 
 Brain &Brain::operator=(const Brain &ref) {
-	std::memcpy(this->ideas, ref.ideas, sizeof(std::string) * ref.ideas->size());
+	std::memcpy(this->ideas, ref.ideas, sizeof(std::string) * (sizeof(ideas)/sizeof(*ideas)));
 	return *this;
 }
 
